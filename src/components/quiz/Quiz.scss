@@ -1,0 +1,32 @@
+.quiz {
+  max-width: 600px;
+  height: 400px;
+  padding: 32px;
+  border: solid;
+  border-radius: 30px;
+  margin: auto;
+  background-color: antiquewhite;
+  display: flex;
+
+  &-question {
+    border: solid;
+    width: 60%;
+    padding: 24px;
+  }
+  &-answers {
+    border: solid;
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &-item {
+      border: solid;
+      min-height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
